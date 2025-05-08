@@ -1,0 +1,51 @@
+---
+antora:
+  name: modules
+  dir: www
+  modules:
+    - name: "01-introduction"
+      label: "Introduction"
+      solveButton: true
+    - name: "02-syncrepos"
+      label: "Syncrepos"
+      solveButton: true
+    - name: "03-lifecycleenv"
+      label: "Lifecycleenv"
+      solveButton: true
+    - name: "04-contentview"
+      label: "Contentview"
+      solveButton: true
+    - name: "05-activationkey"
+      label: "Activationkey"
+      solveButton: true
+    - name: "06-configure-host-group"
+      label: "Configure Host Group"
+      solveButton: true
+    - name: "07-registerhost"
+      label: "Registerhost"
+      solveButton: true
+    - name: "08-tracer"
+      label: "Tracer"
+      solveButton: true
+    - name: "09-updateerratum"
+      label: "Updateerratum"
+      solveButton: true
+    - name: "10-apply-system-role"
+      label: "Apply System Role"
+      solveButton: true
+    - name: "11-iop-advisor"
+      label: "Iop Advisor"
+      solveButton: true
+    - name: "12-installsoftware"
+      label: "Installsoftware"
+      solveButton: true
+    - name: "13-filter-software"
+      label: "Filter Software"
+      solveButton: true
+    - name: "14-conclusion"
+      label: "Conclusion"
+      solveButton: true
+
+tabs:
+  - name: ">_ terminal"
+    url: /wetty

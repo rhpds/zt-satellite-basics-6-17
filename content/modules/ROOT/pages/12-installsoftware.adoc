@@ -1,0 +1,95 @@
+== Introduction
+
+We’ll install software on multiple hosts simultaneously, using a Host
+Collection.
+
+A host collection is a group of content hosts. This feature enables you
+to perform the same action on multiple hosts at once. These actions can
+include the installation, removal, and update of packages and errata,
+change of assigned life cycle environment, and change of Content View.
+You can create host collections to suit your requirements, and those of
+your company. For example, group hosts in host collections by function,
+department, or business unit.
+
+For more information on Host Collections, please see
+https://access.redhat.com/documentation/en-us/red_hat_satellite/6.15/html/managing_hosts/configuring_host_collections_managing-hosts[Configuring
+Host Collections].
+
+== Create a host collection
+
+First we’ll create a Host Collection. Click on `+Host Collections+` in
+the menu.
+
+image:../assets/hostcollectionsmenubar.png[../assets/hostcollectionsmenubar]
+
+Click `+Create Host Collection+`.
+
+image:../assets/createhostcollection.png[../assets/createhostcollection]
+
+Next, do the following:
+
+[arabic]
+. Name the `+Host Collection+`. In this case we’ll name it
+`+TMUX installation+`.
+. Click `+Save+`.
+
+image:../assets/tmuxinstallationhostcollection.png[../assets/tmuxinstallationhostcollection]
+
+Click on `+Hosts+`.
+
+image:../assets/hchosts.png[../assets/hchosts]
+
+Click on `+Add+`.
+
+image:../assets/hchostsadd.png[../assets/hchostsadd]
+
+Select the hosts we want to install `+tmux+` on, then click
+`+Add Selected+`. In this example we will install `+tmux+` on `+rhel1+`
+and `+rhel2+`.
+
+image:../assets/hcaddrhel9hosts.png[../assets/hcaddrhel9hosts]
+
+Click on the `+Details+` tab.
+
+image:../assets/clickontmuxinstallation.png[../assets/clickontmuxinstallation]
+
+== Install software with the host collection
+
+Click on `+Package Installation, Removal, and Update+`.
+
+image:../assets/packageinstallation.png[../assets/packageinstallation]
+
+Do the following:
+
+[arabic]
+. Type in the package name. In this case we’ll install `+tmux+`.
+. Click `+install+`.
+. Click `+yes+`.
+
+image:../assets/updatepackages.png[../assets/updatepackages]
+
+You’ll be taken to the job status page.
+
+image:../assets/statusinstall.png[../assets/statusinstall]
+
+You can check on the real-time installation progress by clicking on a
+host.
+
+image:../assets/installtmuxstatusonhost.png[../assets/installtmuxstatusonhost]
+
+When the installation has completed, click on one of these buttons for
+link:tab-2[button label="`rhel1`" background="`#ee0000`"
+color="`#c7c7c7`"] *or* link:tab-3[button label="`rhel2`"
+background="`#ee0000`" color="`#c7c7c7`"] and run the command `+tmux+`.
+
+[source,bash,run]
+----
+tmux
+----
+
+tmux is a terminal multiplexer. It lets you switch easily between
+several programs in one terminal, detach them (they keep running in the
+background) and reattach them to a different terminal.
+https://github.com/tmux/tmux/wiki[tmux documentation is available here].
+
+image:../assets/2022-08-10_09-02-46.gif[../assets/2022-08-10_09-02-46]

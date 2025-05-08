@@ -1,0 +1,52 @@
+The lab environment consists of the following
+
+[arabic]
+. Red Hat Satellite 6.17.0 Server (Satellite is preinstalled)
+. Red Hat Enterprise Linux 9 hosts.
+
+image:../assets/satellite-basics-environment.png[../assets/satellite-basics-environment]
+
+== Log into the Web UI
+
+First, we’ll log into the Red Hat Satellite Web User Interface (UI).
+Satellite has been preinstalled and installation is out of scope for
+this lab.
+
+Click on the tab labelled Satellite Web UI as shown in the image below.
+
+image:../assets/satellite-tab.png[../assets/satellite-tab]
+
+A new tab will open in your web browser stating the connection is
+insecure. This lab has been authored and tested with Google Chrome so
+please try that it if doesn’t load properly.
+
+Ignore the security message about insecure connections by clicking on
+`+Advanced+`.
+
+image:../assets/insecure-warning.png[../assets/insecure-warning]
+
+Next click on `+Proceed+`.
+
+image:../assets/proceed.png[../assets/proceed]
+
+You’ll need the following credentials to log into the Satellite Web UI.
+
+You can copy and paste each of them below.
+
+[source,bash]
+----
+admin
+----
+
+[source,bash]
+----
+bc31c9a6-9ff0-11ec-9587-00155d1b0702
+----
+
+Now click `+Log In+`.
+
+image:../assets/webuilogin.png[../assets/webuilogin]
+
+You will be taken to the main dashboard.
+
+image:../assets/main-menu.png[../assets/main-menu]
