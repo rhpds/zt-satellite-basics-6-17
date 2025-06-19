@@ -2,7 +2,7 @@
 
 This section documents the process to synchronize Red Hat Enterprise
 Linux 9 BaseOS and AppStream repositories from the content delivery
-network. Please do not synchronize the repositories.
+network. ##*Please do not synchronize the repositories*##.
 
 IMPORTANT: In order to speed up the lab, the RHEL 9 BaseOS and AppStream repos have been pre-synchronized. If you are familiar with this process please feel free to skip to the next assignment. If you decide to run through this procedure, please do not attempt to re-synchronize the repositories.
 
