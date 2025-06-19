@@ -1,10 +1,9 @@
 The lab environment consists of the following
 
-[arabic]
-. Red Hat Satellite 6.17.0 Server (Satellite is preinstalled)
-. Red Hat Enterprise Linux 9 hosts.
+- Red Hat Satellite 6.17.0 Server (Satellite is preinstalled and content/software is synchronized.)
+- Red Hat Enterprise Linux hosts.
 
-image:../assets/satellite-basics-environment.png[../assets/satellite-basics-environment]
+image:satellite-basics-environment.png[../assets/satellite-basics-environment]
 
 == Log into the Web UI
 
@@ -13,21 +12,6 @@ Satellite has been preinstalled and installation is out of scope for
 this lab.
 
 Click on the tab labelled Satellite Web UI as shown in the image below.
-
-image:../assets/satellite-tab.png[../assets/satellite-tab]
-
-A new tab will open in your web browser stating the connection is
-insecure. This lab has been authored and tested with Google Chrome so
-please try that it if doesn’t load properly.
-
-Ignore the security message about insecure connections by clicking on
-`+Advanced+`.
-
-image:../assets/insecure-warning.png[../assets/insecure-warning]
-
-Next click on `+Proceed+`.
-
-image:../assets/proceed.png[../assets/proceed]
 
 You’ll need the following credentials to log into the Satellite Web UI.
 
