@@ -1,4 +1,4 @@
-== Introduction
+== Install software
 
 We’ll install software on multiple hosts simultaneously, using a Host
 Collection.
@@ -20,11 +20,11 @@ Host Collections].
 First we’ll create a Host Collection. Click on `+Host Collections+` in
 the menu.
 
-image:../assets/hostcollectionsmenubar.png[../assets/hostcollectionsmenubar]
+image::hostcollectionsmenubar.png[../assets/hostcollectionsmenubar]
 
 Click `+Create Host Collection+`.
 
-image:../assets/createhostcollection.png[../assets/createhostcollection]
+image::createhostcollection.png[../assets/createhostcollection]
 
 Next, do the following:
 
@@ -33,31 +33,31 @@ Next, do the following:
 `+TMUX installation+`.
 . Click `+Save+`.
 
-image:../assets/tmuxinstallationhostcollection.png[../assets/tmuxinstallationhostcollection]
+image::tmuxinstallationhostcollection.png[../assets/tmuxinstallationhostcollection]
 
 Click on `+Hosts+`.
 
-image:../assets/hchosts.png[../assets/hchosts]
+image::hchosts.png[../assets/hchosts]
 
 Click on `+Add+`.
 
-image:../assets/hchostsadd.png[../assets/hchostsadd]
+image::hchostsadd.png[../assets/hchostsadd]
 
 Select the hosts we want to install `+tmux+` on, then click
 `+Add Selected+`. In this example we will install `+tmux+` on `+rhel1+`
 and `+rhel2+`.
 
-image:../assets/hcaddrhel9hosts.png[../assets/hcaddrhel9hosts]
+image::hcaddrhel9hosts.png[../assets/hcaddrhel9hosts]
 
 Click on the `+Details+` tab.
 
-image:../assets/clickontmuxinstallation.png[../assets/clickontmuxinstallation]
+image::clickontmuxinstallation.png[../assets/clickontmuxinstallation]
 
 == Install software with the host collection
 
 Click on `+Package Installation, Removal, and Update+`.
 
-image:../assets/packageinstallation.png[../assets/packageinstallation]
+image::packageinstallation.png[../assets/packageinstallation]
 
 Do the following:
 
@@ -66,16 +66,16 @@ Do the following:
 . Click `+install+`.
 . Click `+yes+`.
 
-image:../assets/updatepackages.png[../assets/updatepackages]
+image::updatepackages.png[../assets/updatepackages]
 
 You’ll be taken to the job status page.
 
-image:../assets/statusinstall.png[../assets/statusinstall]
+image::statusinstall.png[../assets/statusinstall]
 
 You can check on the real-time installation progress by clicking on a
 host.
 
-image:../assets/installtmuxstatusonhost.png[../assets/installtmuxstatusonhost]
+image::installtmuxstatusonhost.png[../assets/installtmuxstatusonhost]
 
 When the installation has completed, click on one of these buttons for
 link:tab-2[button label="`rhel1`" background="`#ee0000`"
@@ -92,4 +92,4 @@ several programs in one terminal, detach them (they keep running in the
 background) and reattach them to a different terminal.
 https://github.com/tmux/tmux/wiki[tmux documentation is available here].
 
-image:../assets/2022-08-10_09-02-46.gif[../assets/2022-08-10_09-02-46]
+image::2022-08-10_09-02-46.gif[../assets/2022-08-10_09-02-46]
