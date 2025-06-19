@@ -29,8 +29,8 @@ bc31c9a6-9ff0-11ec-9587-00155d1b0702
 
 Now click `+Log In+`.
 
-image:../assets/webuilogin.png[../assets/webuilogin]
+image:webuilogin.png[../assets/webuilogin]
 
 You will be taken to the main dashboard.
 
-image:../assets/main-menu.png[../assets/main-menu]
+image:main-menu.png[../assets/main-menu]
