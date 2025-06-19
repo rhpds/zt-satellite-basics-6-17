@@ -37,7 +37,7 @@ image::firewallsteps.png[firewall stpes]
 
 You can verify that port 80/tcp has been opened by doing the following.
 
-Run the following command.
+In either the `rhel1.lab terminal` or `rhel2.lab terminal`, run the following command.
 
 [source,bash,run]
 ----
