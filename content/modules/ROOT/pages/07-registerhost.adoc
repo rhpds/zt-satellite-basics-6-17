@@ -19,7 +19,7 @@ certificate) and we will set up Insights.
 Click on the link:tab-0[button label="`Satellite Server`"] tab.
 
 .satellite server tab
-image::../assets/satellite-server-tab.png[satellite server tab]
+image::satellite-server-tab.png[satellite server tab]
 
 Click on the `+run+` button to run the following command in the
 `+Satellite Server+` terminal.
@@ -59,9 +59,9 @@ This script obtains the global registration script and runs it on
 In the Satellite Web UI, navigate to `+All Hosts+` to view the newly
 registered hosts.
 
-image:../assets/registeredhost.png[../assets/registeredhost]
+image::registeredhost.png[../assets/registeredhost]
 
-image:../assets/webuiregistered.png[../assets/webuiregistered]
+image::webuiregistered.png[../assets/webuiregistered]
 
 On link:tab-2[button label="`rhel1`" background="`#ee0000`"
 color="`#c7c7c7`"] or link:tab-3[button label="`rhel2`"
@@ -74,4 +74,4 @@ running the following:
 cat /etc/yum.repos.d/redhat.repo
 ----
 
-image:../assets/repolist.png[../assets/repolist]
+image::repolist.png[../assets/repolist]
