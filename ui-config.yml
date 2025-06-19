@@ -49,5 +49,9 @@ antora:
 tabs:
   - name: Satellite
     url: https://satellite-${guid}.${domain}/
-  - name: ">_ terminal"
-    url: /wetty
+  - name: "satellite.lab terminal"
+    url: /wetty/wetty_satellite
+  - name: "rhel1.lab terminal"
+    url: /wetty/wetty_rhel1
+  - name: "rhel2.lab terminal"
+    url: /wetty/wetty_rhel2
