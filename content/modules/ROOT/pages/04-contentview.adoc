@@ -21,17 +21,17 @@ Content Views] in Satellite documentation.
 
 Click on `+Content Views+`.
 
-image:../assets/contentview.png[../assets/contentview]
+image:contentview.png[../assets/contentview]
 
 Click on `+Create New View+`.
 
-image:../assets/createcontentview.png[../assets/createcontentview]
+image:createcontentview.png[../assets/createcontentview]
 
-We’ll name this content view `+RHEL9+`:
+We’ll name this content view `+RHEL10+`:
 
 [source,bash]
 ----
-RHEL9
+RHEL10
 ----
 
 Click `+Create content view+` to save it.
@@ -41,22 +41,22 @@ ____
 need this value in step 6 of this lab.
 ____
 
-image:../assets/createcv.png[../assets/createcv]
+image:createcv.png[../assets/createcv]
 
 Click on `+Show repositories+`.
 
 .show repos
-image::../assets/showrepos.png[show repos]
+image::showrepos.png[show repos]
 
-Add the `+Red Hat Enterprise Linux 9 BaseOS+` and
-`+Red Hat Enterprise Linux 9 AppStream+` repos. Click
+Add the `+Red Hat Enterprise Linux 10 BaseOS+` and
+`+Red Hat Enterprise Linux 10 AppStream+` repos. Click
 `+Add Repositories+`.
 
-image:../assets/addrepos.png[../assets/addrepos]
+image:addrepos.png[../assets/addrepos]
 
 Click `+Publish New Version+`.
 
-image:../assets/publish.png[../assets/publish]
+image:publish.png[../assets/publish]
 
 Next we’ll complete the following steps to publish and promote the
 content view.
@@ -67,6 +67,6 @@ content view.
 to. In this case it is `+Test+`.
 . Click `+Next+` to review the task.
 
-image:../assets/publishwizard.png[../assets/publishwizard]
+image:publishwizard.png[../assets/publishwizard]
 
 Review the details and then click `+Finish+`.
