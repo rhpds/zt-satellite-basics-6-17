@@ -1,4 +1,4 @@
-== Introduction
+== Create a Lifecycle environment
 
 The application life cycle is a concept central to Red Hat Satellite 6’s
 content management functions. The application life cycle defines how a

@@ -1,4 +1,4 @@
-== Introduction
+== Create an Activation Key
 
 Activation keys provide a method to automate system registration and
 subscription attachment. You can create multiple keys and associate them

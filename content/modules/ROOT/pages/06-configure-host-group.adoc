@@ -1,4 +1,4 @@
-== Introduction
+== Configure a Host Group
 
 Red Hat Satellite provides several logical units for grouping hosts.
 Hosts that are members of those groups inherit the group configuration.
@@ -33,7 +33,7 @@ In the host group menu do the following:
 . Name the host group `+Application Servers+`.
 . Select `+satellite.lab+` as the content source.
 . Select the `+Test+` lifecycle environment.
-. Select the `+RHEL9+` content view.
+. Select the `+RHEL10+` content view.
 . Click on `+Ansible Roles+`
 
 .1
@@ -42,7 +42,6 @@ image::createhostgroup-new-1.png[1]
 In the Ansible Roles menu do the following:
 
 [arabic]
-. Navigate to the first page of system roles.
 . Click on `+rhel-system-roles.firewall+`.
 . Click on `+Parameters+`.
 
@@ -54,8 +53,8 @@ to port 80/tcp. In the Parameters menu do the following:
 
 [arabic]
 . Click `+Add Parameter+`.
-. Name the parameter `+firewall+`. > [!WARNING] > Parameter names are
-case sensitive. `+firewall+` must be in lower case.
+. Name the parameter `+firewall+`.
+WARNING: Parameter names are case sensitive. `+firewall+` must be in lower case.
 . Choose the type `+array+`.
 . Copy and paste the following into the `+value+` field.
 
@@ -82,7 +81,7 @@ requirements.
 
 image::variables.png[variables]
 
-We will assign the `+RHEL9+` activation key to this group.
+We will assign the `+RHEL10+` activation key to this group.
 
 [arabic]
 . Under `+Activation Keys+` enter `+RHEL9+`.

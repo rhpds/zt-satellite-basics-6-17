@@ -1,4 +1,4 @@
-== Introduction
+== Synchronize Repositories - FOR DOCUMENTATION PURPOSES ONLY
 
 This section documents the process to synchronize Red Hat Enterprise
 Linux 9 BaseOS and AppStream repositories from the content delivery

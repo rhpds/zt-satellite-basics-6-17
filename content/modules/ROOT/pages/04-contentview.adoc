@@ -1,4 +1,4 @@
-== Introduction
+== Create a Content View
 
 In this challenge we’ll create a Content View. Red Hat Satellite uses
 Content Views to create customized subsets of repositories from the full
