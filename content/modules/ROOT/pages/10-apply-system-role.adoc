@@ -1,11 +1,9 @@
-== Introduction
+== Apply RHEL System Role
 
-____
-{empty}[!NOTE] Before starting this challenge, make sure that your hosts
+IMPORTANT: Before starting this challenge, make sure that your hosts
 have finished rebooting from the previous challenge. You can easily
 check by clicking on the terminal tab to check that you have a working
-session with each host. image:../assets/hosttab.png[tabs]
-____
+session with each host.
 
 Earlier, we configured the our host group to have a system role applied
 to it. Specifically, port 80/tcp was to be opened. You can find out more
@@ -15,7 +13,7 @@ here].
 Once again, navigate to `+All Hosts+`.
 
 .all hosts
-image::../assets/allhostsagain.png[all hosts]
+image::allhostsagain.png[all hosts]
 
 Next we’ll do the following.
 
@@ -25,26 +23,19 @@ Next we’ll do the following.
 . Select `+Run all Ansible roles+`.
 
 .apply system roles
-image::../assets/applysystemroles.png[apply system roles]
+image::applysystemroles.png[apply system roles]
 
 In the `+Overview+` menu you’ll be shown the status of the jobs.
 
 .system role
-image::../assets/systemrolestatus.png[system role]
+image::systemrolestatus.png[system role]
 
 If you want, click on a host to view the application of the system role.
 
 .firewall stpes
-image::../assets/firewallsteps.png[firewall stpes]
+image::firewallsteps.png[firewall stpes]
 
 You can verify that port 80/tcp has been opened by doing the following.
-
-Click on one of these buttons for link:tab-2[button label="`rhel1`"
-background="`#ee0000`" color="`#c7c7c7`"] *or* link:tab-4[button
-label="`rhel2`" background="`#ee0000`" color="`#c7c7c7`"].
-
-.host tab
-image::../assets/hosttab.png[host tab]
 
 Run the following command.
 
@@ -54,4 +45,4 @@ firewall-cmd --list-all
 ----
 
 .fwcmd
-image::../assets/firewallcmdoutput.png[fwcmd]
+image::firewallcmdoutput.png[fwcmd]
