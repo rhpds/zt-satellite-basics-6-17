@@ -13,83 +13,79 @@ server.
 `+RHEL9+` content view.
 . Install `+katello-host-tools-tracer+` on our hosts.
 
-== Add the Satellite client repository
+== Add the Satellite client repository - DOCUMENTATION PURPOSES ONLY
 
-____
-[!IMPORTANT] This section is for your documentation purposes. This step
+IMPORTANT: This section is for your documentation purposes. This step
 has already been performed for you. Read over this section and proceed
 to the next step.
-____
 
 Go to `+Content+` and click on `+Red Hat Repositories+`.
 
 .rh repos
-image::../assets/redhatrepositories.png[rh repos]
+image::redhatrepositories.png[rh repos]
 
-Next add the `+satellite-client-6-for-rhel-9+` repository.
+Next add the `+satellite-client-6-for-rhel-10+` repository.
 
 [arabic]
 . Paste the following into the search bar.
 
 [source,bash]
 ----
-satellite-client-6-for-rhel-9
+satellite-client-6-for-rhel-10
 ----
 
 [arabic, start=2]
 . Click the `+++` symbol.
 
 .repo 6
-image::../assets/client6.png[repo 6]
+image::client6.png[]
 
-== Synchronize the Satellite client repository
+== Synchronize the Satellite client repository - DOCUMENTATION PURPOSES ONLY
 
-____
-[!IMPORTANT] This section is for your documentation purposes. This step
+IMPORTANT: This section is for your documentation purposes. This step
 has already been performed for you. Read over this section and proceed
 to the next step.
-____
 
 Next, we’ll navigate to the `+Products+` menu.
 
 .products
-image::../assets/products.png[products]
+image::products.png[products]
 
 Click on `+Red Hat Enterprise Linux for x86_64+`.
 
 .rhel product click
-image::../assets/rhelproductclick.png[rhel product click]
+image::rhelproductclick.png[rhel product click]
 
 Do the following to synchronize the repository with Satellite.
 
 [arabic]
-. Select `+Red Hat Satellite Client 6 for RHEL 9 x86_64 RPMs+`.
+. Select `+Red Hat Satellite Client 6 for RHEL 10 x86_64 RPMs+`.
 . Click `+Sync Now+`.
 
 .sync
-image::../assets/syncclientproduct.png[sync]
+image::syncclientproduct.png[sync]
 
-== Add the Satellite client repository to the RHEL9 content view
+== Add the Satellite client repository to the RHEL10 content view
 
 Now that the repository containing the Tracer application is
 synchronized to Satellite, we’ll make it available to our hosts by
-adding and enabling the repository in our existing `+RHEL9+` content
+adding and enabling the repository in our existing `+RHEL10+` content
 view.
 
 Navigate to `+Content Views+`.
 
 .cv
-image::../assets/contentview.png[cv]
+image::contentview.png[cv]
 
-Click on the `+RHEL9+` content view.
+Click on the `+RHEL10+` content view.
 
 .rhel9cv
-image::../assets/rhel9cv.png[rhel9cv]
+image::rhel9cv.png[rhel9cv]
 
 Click on the `+Repositories+` tab.
 
 .repos
-image::../assets/cvrepotab.png[repos]
+image::cvrepotab.png[repos]
 
 Select `+All+` from the `+Status+` dropdown to unhide the Satellite
 tools repository. image:../assets/unhide.png[unhide]
@@ -97,16 +93,16 @@ tools repository. image:../assets/unhide.png[unhide]
 Add the repo.
 
 [arabic]
-. Select the repo `+Red Hat Satellite Client 6 for RHEL 9 x86_64 RPMs+`.
+. Select the repo `+Red Hat Satellite Client 6 for RHEL 10 x86_64 RPMs+`.
 . Click `+Add repositories+`.
 
 .add repos
-image::../assets/addclientrepo.png[add repos]
+image::addclientrepo.png[add repos]
 
 Click `+Publish new version+`.
 
 .pub
-image::../assets/publishnewversion.png[pub]
+image::publishnewversion.png[pub]
 
 We’ll now publish a new version of the content view.
 
@@ -118,12 +114,12 @@ example we added `+Added the Satellite Client 6 repo.+`.
 . Click `+Next+`.
 
 .pubcv
-image::../assets/publishclientrepocv.png[pubcv]
+image::publishclientrepocv.png[pubcv]
 
 Click `+Finish+`.
 
 .finish
-image::../assets/finishclientcv.png[finish]
+image::finishclientcv.png[finish]
 
 == Enable access to the Satellite client repository
 
@@ -139,17 +135,17 @@ challenge.
 First, navigate to `+Activation Keys+`.
 
 .activation keys
-image::../assets/akmenu.png[activation keys]
+image::akmenu.png[activation keys]
 
 Click on the `+RHEL9+` activation key.
 
 .rhel9ak
-image::../assets/rhel9ak.png[rhel9ak]
+image::rhel9ak.png[rhel9ak]
 
 Click on `+Repository Sets+`.
 
 .rhel9 ak repo set
-image::../assets/rhel9akreposet.png[rhel9 ak repo set]
+image::rhel9akreposet.png[rhel9 ak repo set]
 
 Override the `+Red Hat Satellite Client 6 for RHEL 9 x86_64 RPMs+`
 repository to `+Enabled+`.
@@ -160,7 +156,7 @@ repository.
 . Click `+Override to Enabled+`.
 
 .override
-image::../assets/overrideenable.png[override]
+image::overrideenable.png[override]
 
 == Install Tracer on existing hosts managed by Satellite
 
@@ -171,7 +167,7 @@ automatically get access.
 Go back to the `+All hosts+` menu.
 
 .allhostsagain
-image::../assets/allhostsagain.png[allhostsagain]
+image::allhostsagain.png[allhostsagain]
 
 [arabic]
 . Select your hosts (rhel1 and rhel2).
@@ -179,12 +175,12 @@ image::../assets/allhostsagain.png[allhostsagain]
 . Select `+Schedule Remote Job+`.
 
 .all host
-image::../assets/scheduleremotejob.png[all host]
+image::scheduleremotejob.png[all host]
 
 In the `+Category and Template+` menu, click `+Next+`.
 
 .run template
-image::../assets/runjobtemplate.png[run template]
+image::runjobtemplate.png[run template]
 
 In the `+Target hosts and inputs+` menu, do the following.
 
@@ -199,10 +195,10 @@ dnf config-manager --set-enabled satellite-client-6-for-rhel-9-x86_64-rpms && dn
 
 [arabic, start=2]
 . Click `+Run on selected hosts+`.
-image:../assets/runonselectedhosts.png[run on selected hosts]
+image:runonselectedhosts.png[run on selected hosts]
 
 Tracer is now installed. We’ll see how it will help us in the next
 challenge, where we apply errata updates.
 
 .tracer installed
-image::../assets/tracerinstalled.png[tracer installed]
+image::tracerinstalled.png[tracer installed]
