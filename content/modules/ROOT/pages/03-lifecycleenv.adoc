@@ -27,17 +27,17 @@ documentation].
 
 Navigate to the `+Lifecycle Environments+` menu.
 
-image:../assets/lifecycle-environments.png[../assets/lifecycle-environments]
+image:lifecycle-environments.png[../assets/lifecycle-environments]
 
 Click on `+Create Environment Path+`.
 
-image:../assets/createenvironment.png[../assets/createenvironment]
+image:createenvironment.png[../assets/createenvironment]
 
 Create a new environment. We’ll call this one `+Test+`. Then click
 `+save+` to save it.
 
-image:../assets/newenvironment.png[../assets/newenvironment]
+image:newenvironment.png[../assets/newenvironment]
 
 The `+Lifecycle Environment Paths+` menu should look like this.
 
-image:../assets/envmenuresult.png[../assets/envmenuresult]
+image:envmenuresult.png[../assets/envmenuresult]
