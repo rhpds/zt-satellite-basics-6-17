@@ -35,10 +35,8 @@ For your cut/paste convenience:
 RHEL10
 ----
 
-____
-[!NOTE] The name of the activation key will be used to add hosts. The
+IMPORTANT: The name of the activation key will be used to add hosts. The
 names must match or the hosts will not be registered.
-____
 
 image::akcreation.png[../assets/akcreation]
 
