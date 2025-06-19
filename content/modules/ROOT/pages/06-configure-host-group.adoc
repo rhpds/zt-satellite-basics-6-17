@@ -20,12 +20,12 @@ port 80/tcp.
 Navigate to the `+Configure+` and `+Host Groups+` menu.
 
 .host groups menu
-image::../assets/menuhostgroups.png[host groups menu]
+image::menuhostgroups.png[host groups menu]
 
 Click on `+Create Host Group+`.
 
 .create host group
-image::../assets/createhostgroupbutton.png[create host group]
+image::createhostgroupbutton.png[create host group]
 
 In the host group menu do the following:
 
@@ -37,7 +37,7 @@ In the host group menu do the following:
 . Click on `+Ansible Roles+`
 
 .1
-image::../assets/createhostgroup-new-1.png[1]
+image::createhostgroup-new-1.png[1]
 
 In the Ansible Roles menu do the following:
 
@@ -47,7 +47,7 @@ In the Ansible Roles menu do the following:
 . Click on `+Parameters+`.
 
 .2
-image::../assets/createhostgroup2.png[2]
+image::createhostgroup2.png[2]
 
 We need to tell the firewall system role to allow incoming connections
 to port 80/tcp. In the Parameters menu do the following:
@@ -64,25 +64,23 @@ case sensitive. `+firewall+` must be in lower case.
 [{"port":["80/tcp"],"state":"enabled"}]
 ----
 
-____
-[!NOTE] This property is a JSON format version of the YAML ansible
+IMPORTANT: This property is a JSON format version of the YAML ansible
 properties found in an ansible playbook.
-____
 
 [arabic, start=5]
 . Click `+Activation Keys+`.
 
 .3
-image::../assets/createhostgroup3.png[3]
+image::createhostgroup3.png[3]
 
-____
-{empty}[!NOTE] `+Host Group Parameters+` are variables that can be
+IMPORTANT: `+Host Group Parameters+` are variables that can be
 applied by RHEL System Roles or Ansible Roles. You can find a list of
 available variables by clicking on Configure > Ansible > Variables.
 `+Host Group Parameters+` can help you configure subsets of hosts using
 RHEL System Roles with different variables, according to your
-requirements. image:../assets/variables.png[variables]
-____
+requirements.
+
+image::variables.png[variables]
 
 We will assign the `+RHEL9+` activation key to this group.
 
@@ -91,4 +89,4 @@ We will assign the `+RHEL9+` activation key to this group.
 . Click on `+Submit+`.
 
 .4
-image::../assets/createhostgroup4.png[4]
+image::createhostgroup4.png[4]
