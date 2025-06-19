@@ -1,4 +1,4 @@
-== Introduction
+== Register Hosts
 
 Now we’ll register the hosts `+rhel1+` and `+rhel2+` to our Satellite
 server. We’ll use the command line interface to generate a registration
@@ -16,21 +16,19 @@ certificate) and we will set up Insights.
 
 == Create a registration script
 
-Click on the link:tab-0[button label="`Satellite Server`"] tab.
+Click on the `satellite.lab terminal` tab.
 
-.satellite server tab
-image::satellite-server-tab.png[satellite server tab]
+image::satellite.lab.tab.png[]
 
-Click on the `+run+` button to run the following command in the
-`+Satellite Server+` terminal.
+Copy and paste the bash script below into the `satellite.lab terminal`.
 
 [source,bash,run]
 ----
 hammer host-registration generate-command --hostgroup "Application Servers" --insecure 1 --setup-insights 1 --force 1
 ----
 
-The output of this command is a curl command similar to this (don’t copy
-paste this):
+The output of this command is a curl command similar to this (##don’t copy
+paste this##):
 
 [source,nocopy]
 ----
@@ -43,14 +41,14 @@ In the interest of minimizing copy/paste errors, a script has been
 created below to register the hosts `+rhel1+` and `+rhel2+` to our
 Satellite server.
 
-Make sure you are in the link:tab-0[button label="`Satellite Server`"].
+IMPORTANT: Make sure you are in the `satellite.lab terminal`.
 Click on `+run+` in the right hand corner of the code block below.
 
 [source,bash,run]
 ----
 export REGISTRATION_SCRIPT=$(hammer host-registration generate-command --hostgroup "Application Servers" --insecure 1 --setup-insights 1 --force 1)
-ssh -o StrictHostKeyChecking=no rhel1 $REGISTRATION_SCRIPT
-ssh -o StrictHostKeyChecking=no rhel2 $REGISTRATION_SCRIPT
+ssh -o StrictHostKeyChecking=no root@rhel1 $REGISTRATION_SCRIPT
+ssh -o StrictHostKeyChecking=no root@rhel2 $REGISTRATION_SCRIPT
 ----
 
 This script obtains the global registration script and runs it on
