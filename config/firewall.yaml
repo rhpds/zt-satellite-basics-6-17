@@ -4,17 +4,12 @@ egress:
   - ports:
       - protocol: TCP
         port: 443
-
-# The following lines are suggested based on Instruqt's allow_external_ingress fields:
-# rhel1:
-#   - http
-#   - https
-#   - high-ports
-# rhel2:
-#   - http
-#   - https
-#   - high-ports
-# satellite:
-#   - http
-#   - https
-#   - high-ports
+  - to:
+      - podSelector:
+          matchLabels:
+            kubevirt.io: virt-launcher
+ingress:
+  - from:
+      - podSelector:
+          matchLabels:
+            kubevirt.io: virt-launcher
