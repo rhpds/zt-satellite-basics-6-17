@@ -1,3 +1,5 @@
+== Enable the Tracer service on RHEL hosts
+
 Often when software is updated, services on a host must be restarted
 before the new software can run. The tracer utility can detect when a
 service needs to be restarted, and notify you through Red Hat Satellite.
@@ -79,8 +81,8 @@ image::contentview.png[cv]
 
 Click on the `+RHEL10+` content view.
 
-.rhel9cv
-image::rhel9cv.png[rhel9cv]
+.rhel10 Content View
+image::rhel10cv.png[rhel10cv]
 
 Click on the `+Repositories+` tab.
 
@@ -88,7 +90,9 @@ Click on the `+Repositories+` tab.
 image::cvrepotab.png[repos]
 
 Select `+All+` from the `+Status+` dropdown to unhide the Satellite
-tools repository. image:../assets/unhide.png[unhide]
+tools repository.
+
+image::selectallcv.png[unhide]
 
 Add the repo.
 
@@ -102,7 +106,7 @@ image::addclientrepo.png[add repos]
 Click `+Publish new version+`.
 
 .pub
-image::publishnewversion.png[pub]
+image::publishnewversion.png[]
 
 We’ll now publish a new version of the content view.
 
@@ -118,13 +122,10 @@ image::publishclientrepocv.png[pubcv]
 
 Click `+Finish+`.
 
-.finish
-image::finishclientcv.png[finish]
-
 == Enable access to the Satellite client repository
 
 Now we’ll enable access to the
-`+Red Hat Satellite Client 6 for RHEL 9 x86_64 RPMs+` repo by specifying
+`+Red Hat Satellite Client 6 for RHEL 10 x86_64 RPMs+` repo by specifying
 it in the `+Activation Key+`. When new hosts are added, they will
 automatically receive access to the enabled repository so that Tracer
 can be installed.
@@ -137,21 +138,21 @@ First, navigate to `+Activation Keys+`.
 .activation keys
 image::akmenu.png[activation keys]
 
-Click on the `+RHEL9+` activation key.
+Click on the `+RHEL10+` activation key.
 
-.rhel9ak
-image::rhel9ak.png[rhel9ak]
+.rhel10ak
+image::rhel10ak.png[rhel10ak]
 
 Click on `+Repository Sets+`.
 
-.rhel9 ak repo set
-image::rhel9akreposet.png[rhel9 ak repo set]
+.rhel10 ak repo set
+image::rhel10akreposet.png[rhel10 ak repo set]
 
-Override the `+Red Hat Satellite Client 6 for RHEL 9 x86_64 RPMs+`
+Override the `+Red Hat Satellite Client 6 for RHEL 10 x86_64 RPMs+`
 repository to `+Enabled+`.
 
 [arabic]
-. Select the `+Red Hat Satellite Client 6 for RHEL 9 x86_64 RPMs+`
+. Select the `+Red Hat Satellite Client 6 for RHEL 10 x86_64 RPMs+`
 repository.
 . Click `+Override to Enabled+`.
 
@@ -190,12 +191,14 @@ install the Tracer software.
 
 [source,bash]
 ----
-dnf config-manager --set-enabled satellite-client-6-for-rhel-9-x86_64-rpms && dnf install -y katello-host-tools-tracer
+dnf config-manager --set-enabled satellite-client-6-for-rhel-10-x86_64-rpms && dnf install -y katello-host-tools-tracer
 ----
 
 [arabic, start=2]
 . Click `+Run on selected hosts+`.
-image:runonselectedhosts.png[run on selected hosts]
+
+.run on selected hosts
+image::runonselectedhosts.png[]
 
 Tracer is now installed. We’ll see how it will help us in the next
 challenge, where we apply errata updates.
