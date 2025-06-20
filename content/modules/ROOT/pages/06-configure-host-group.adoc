@@ -19,12 +19,12 @@ port 80/tcp.
 
 Navigate to the `+Configure+` and `+Host Groups+` menu.
 
-.host groups menu
+.Host groups menu
 image::menuhostgroups.png[host groups menu]
 
 Click on `+Create Host Group+`.
 
-.create host group
+.Create host group
 image::createhostgroupbutton.png[create host group]
 
 In the host group menu do the following:
@@ -36,7 +36,7 @@ In the host group menu do the following:
 . Select the `+RHEL10+` content view.
 . Click on `+Ansible Roles+`
 
-.1
+.Host group details
 image::createhostgroup-new-1.png[1]
 
 In the Ansible Roles menu do the following:
@@ -45,7 +45,7 @@ In the Ansible Roles menu do the following:
 . Click on `+rhel-system-roles.firewall+`.
 . Click on `+Parameters+`.
 
-.2
+.Assign the firewall ansible role
 image::createhostgroup2.png[2]
 
 We need to tell the firewall system role to allow incoming connections
@@ -69,7 +69,7 @@ properties found in an ansible playbook.
 [arabic, start=5]
 . Click `+Activation Keys+`.
 
-.3
+.Host group parameters (for ansible roles)
 image::createhostgroup3.png[3]
 
 IMPORTANT: `+Host Group Parameters+` are variables that can be
@@ -87,5 +87,5 @@ We will assign the `+RHEL10+` activation key to this group.
 . Under `+Activation Keys+` enter `+RHEL10+`.
 . Click on `+Submit+`.
 
-.4
+.Assign an activation key
 image::createhostgroup4.png[4]

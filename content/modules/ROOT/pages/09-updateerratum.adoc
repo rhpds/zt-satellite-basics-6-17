@@ -13,6 +13,7 @@ https://access.redhat.com/articles/2130961[please visit this page].
 To view Errata in Satellite, click on `+Content+`, `+Content Types+`,
 and `+Errata+`.
 
+.Errata menu
 image::erratamenubar.png[../assets/erratamenubar]
 
 You’ll be taken to a page containing all the Errata contained in the
@@ -23,12 +24,14 @@ Not all of these Errata apply to the hosts we’ve added to this Satellite
 server. To view applicable and installable Errata, click on the
 `+Installable+` radio boxes.
 
+.Applicatble and installable errata filter
 image::applicableandinstallable.png[../assets/applicableandinstallable]
 
 Let’s install all the Installable Errata to our two hosts.
 
 Select all of the Errata we just filtered.
 
+.Installable errata
 image::selectallerrata.png[../assets/selectallerrata]
 
 IMPORTANT: Increase the page size to select all the errata. If the number
@@ -37,7 +40,7 @@ operation multiple times or run it from the host > content > errata
 menu. For the purposes of this lab, it’s not necessary to apply all
 errata.
 
-.pager
+.Pager
 image::pagersize.png[pager]
 
 You’ll be taken to the Apply Errata menu where you should do the
@@ -48,6 +51,7 @@ following:
 hosts.
 . Click `+Next+`.
 
+.Apply errata
 image::applyerratawizard.png[../assets/applyerratawizard]
 
 Click confirm to apply the errata.
@@ -55,22 +59,27 @@ Click confirm to apply the errata.
 To view the application of Errata in real-time, click on the host
 `+rhel1+`.
 
+.Run job
 image::viewapplicationoferratahost.png[../assets/viewapplicationoferratahost]
 
 On the following page, you’ll be able to see the application process.
 
+.Job details
 image::process.png[../assets/process]
 
 To return to the job status page, click `+Back to Job+`.
 
+.Back to job button
 image::backtojob.png[../assets/backtojob]
 
 When the job is complete, the page will look like this.
 
+.Job completion
 image::completejobstatus.png[../assets/completejobstatus]
 
 Go to Hosts > All Hosts.
 
+.All hosts
 image::allhostsagain.png[../assets/allhostsagain]
 
 All hosts managed by Satellite will still display in an orange font
@@ -78,6 +87,7 @@ signifying there are status warnings. This is because the Tracer
 application has detected services that require restarting. If the kernel
 or systemd has been updated, the hosts will require a reboot.
 
+.Traces status
 image::tracesorange.png[../assets/tracesorange]
 
 == Resolve Traces (Restart services that require it)
@@ -89,7 +99,7 @@ Tracer will detect which of these services need to be restarted.
 Click on a host (it doesn’t matter which, you’ll have to perform this
 procedure twice.)
 
-.error host
+.Error status
 image::errorhost.png[error host]
 
 Do the following to resolve the traces.
@@ -101,7 +111,7 @@ blank.
 . Select all the services listed.
 . Click `+Restart app+`.
 
-.restart
+.Restart host
 image::tracesrestart.png[restart]
 
 WARNING: Resolving traces might take a few minutes, especially for a

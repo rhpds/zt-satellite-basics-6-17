@@ -18,6 +18,7 @@ certificate) and we will set up Insights.
 
 Click on the `satellite.lab terminal` tab.
 
+.satellite.lab terminal tab
 image::satellite.lab.tab.png[]
 
 Copy and paste the bash script below into the `satellite.lab terminal`.
@@ -58,8 +59,10 @@ This script obtains the global registration script and runs it on
 In the Satellite Web UI, navigate to `+All Hosts+` to view the newly
 registered hosts.
 
+.All hosts menu
 image::registeredhost.png[../assets/registeredhost]
 
+.All hosts
 image::webuiregistered.png[../assets/webuiregistered]
 
 You can also check that your host repos are configured for the Satellite server `+satellite.lab+` by
@@ -70,4 +73,5 @@ running the following:
 cat /etc/yum.repos.d/redhat.repo
 ----
 
+.Repository listing on rhel1 system
 image::repolist.png[]

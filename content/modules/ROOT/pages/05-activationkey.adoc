@@ -18,10 +18,12 @@ are not made to existing hosts.
 
 To create an activation key, navigate to the `+Activation Keys+` menu.
 
+.Activation key menu
 image::akmenu.png[../assets/akmenu]
 
 Click on `+Create Activation Key+`.
 
+.Create a new activation key
 image::createak.png[../assets/createak]
 
 We’ll name this activation key (1) `+RHEL10+`, select the (2) `+Test+`
@@ -38,6 +40,7 @@ RHEL10
 IMPORTANT: The name of the activation key will be used to add hosts. The
 names must match or the hosts will not be registered.
 
+.Activation key creation wizard
 image::akcreation.png[../assets/akcreation]
 
 If you click on `+Repository Sets+`, you’ll notice that this Activation
@@ -45,5 +48,5 @@ Key provides access to the RHEL 10 AppStream and BaseOS repositories. The `Statu
 This access is provided by configuring the Activation Key to use the
 `+RHEL10+` Content View.
 
-.akrepos
+.Activation key repository sets
 image::akrepos.png[akrepos]

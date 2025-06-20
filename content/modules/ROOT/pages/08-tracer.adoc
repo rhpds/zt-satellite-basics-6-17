@@ -19,11 +19,11 @@ server.
 
 IMPORTANT: This section is for your documentation purposes. This step
 has already been performed for you. Read over this section and proceed
-to the next step.
+to the next step ##below##.
 
 Go to `+Content+` and click on `+Red Hat Repositories+`.
 
-.rh repos
+.Red Hat repos
 image::redhatrepositories.png[rh repos]
 
 Next add the `+satellite-client-6-for-rhel-10+` repository.
@@ -39,23 +39,23 @@ satellite-client-6-for-rhel-10
 [arabic, start=2]
 . Click the `+++` symbol.
 
-.repo 6
+.Red Hat Satellite client repository
 image::client6.png[]
 
 == Synchronize the Satellite client repository - DOCUMENTATION PURPOSES ONLY
 
 IMPORTANT: This section is for your documentation purposes. This step
 has already been performed for you. Read over this section and proceed
-to the next step.
+to the next step ##below##.
 
 Next, we’ll navigate to the `+Products+` menu.
 
-.products
+.Products menu
 image::products.png[products]
 
 Click on `+Red Hat Enterprise Linux for x86_64+`.
 
-.rhel product click
+.RHEL products
 image::rhelproductclick.png[rhel product click]
 
 Do the following to synchronize the repository with Satellite.
@@ -64,7 +64,7 @@ Do the following to synchronize the repository with Satellite.
 . Select `+Red Hat Satellite Client 6 for RHEL 10 x86_64 RPMs+`.
 . Click `+Sync Now+`.
 
-.sync
+.Sync Satellite Client repo now
 image::syncclientproduct.png[sync]
 
 == Add the Satellite client repository to the RHEL10 content view
@@ -76,22 +76,23 @@ view.
 
 Navigate to `+Content Views+`.
 
-.cv
+.Content views menu
 image::contentview.png[cv]
 
 Click on the `+RHEL10+` content view.
 
-.rhel10 Content View
+.RHEL10 Content View
 image::rhel10cv.png[rhel10cv]
 
 Click on the `+Repositories+` tab.
 
-.repos
+.Repositories tab
 image::cvrepotab.png[repos]
 
 Select `+All+` from the `+Status+` dropdown to unhide the Satellite
 tools repository.
 
+.View all available repositories
 image::selectallcv.png[unhide]
 
 Add the repo.
@@ -100,12 +101,12 @@ Add the repo.
 . Select the repo `+Red Hat Satellite Client 6 for RHEL 10 x86_64 RPMs+`.
 . Click `+Add repositories+`.
 
-.add repos
+.Add the Satellite Client repository
 image::addclientrepo.png[add repos]
 
 Click `+Publish new version+`.
 
-.pub
+.Publish a new version of the content view
 image::publishnewversion.png[]
 
 We’ll now publish a new version of the content view.
@@ -117,7 +118,7 @@ example we added `+Added the Satellite Client 6 repo.+`.
 . Click on the `+Test+` lifecycle environment.
 . Click `+Next+`.
 
-.pubcv
+.Publish content view wizard
 image::publishclientrepocv.png[pubcv]
 
 Click `+Finish+`.
@@ -135,17 +136,17 @@ challenge.
 
 First, navigate to `+Activation Keys+`.
 
-.activation keys
+.Activation keys
 image::akmenu.png[activation keys]
 
 Click on the `+RHEL10+` activation key.
 
-.rhel10ak
+.RHEL10 Activation Key
 image::rhel10ak.png[rhel10ak]
 
 Click on `+Repository Sets+`.
 
-.rhel10 ak repo set
+.RHEL10 activation key repository set
 image::rhel10akreposet.png[rhel10 ak repo set]
 
 Override the `+Red Hat Satellite Client 6 for RHEL 10 x86_64 RPMs+`
@@ -156,7 +157,7 @@ repository to `+Enabled+`.
 repository.
 . Click `+Override to Enabled+`.
 
-.override
+.Override to enable the Satellite 6 client repo
 image::overrideenable.png[override]
 
 == Install Tracer on existing hosts managed by Satellite
@@ -167,7 +168,7 @@ automatically get access.
 
 Go back to the `+All hosts+` menu.
 
-.allhostsagain
+.All hosts menu
 image::allhostsagain.png[allhostsagain]
 
 [arabic]
@@ -175,12 +176,12 @@ image::allhostsagain.png[allhostsagain]
 . Click `+Select Action+`.
 . Select `+Schedule Remote Job+`.
 
-.all host
+.Select RHEL systems
 image::scheduleremotejob.png[all host]
 
 In the `+Category and Template+` menu, click `+Next+`.
 
-.run template
+.Run job wizard
 image::runjobtemplate.png[run template]
 
 In the `+Target hosts and inputs+` menu, do the following.
@@ -197,11 +198,11 @@ dnf config-manager --set-enabled satellite-client-6-for-rhel-10-x86_64-rpms && d
 [arabic, start=2]
 . Click `+Run on selected hosts+`.
 
-.run on selected hosts
+.Run job on selected hosts
 image::runonselectedhosts.png[]
 
 Tracer is now installed. We’ll see how it will help us in the next
 challenge, where we apply errata updates.
 
-.tracer installed
+.Tracer installed
 image::tracerinstalled.png[tracer installed]

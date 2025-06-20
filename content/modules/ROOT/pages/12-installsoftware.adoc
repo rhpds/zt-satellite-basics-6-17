@@ -20,10 +20,12 @@ Host Collections].
 First we’ll create a Host Collection. Click on `+Host Collections+` in
 the menu.
 
+.Host collections menu
 image::hostcollectionsmenubar.png[../assets/hostcollectionsmenubar]
 
 Click `+Create Host Collection+`.
 
+.Create host collection
 image::createhostcollection.png[../assets/createhostcollection]
 
 Next, do the following:
@@ -33,30 +35,36 @@ Next, do the following:
 `+TMUX installation+`.
 . Click `+Save+`.
 
+.Create host collection wizard
 image::tmuxinstallationhostcollection.png[../assets/tmuxinstallationhostcollection]
 
 Click on `+Hosts+`.
 
+.Hosts tab
 image::hchosts.png[../assets/hchosts]
 
 Click on `+Add+`.
 
+.Add hosts tab
 image::hchostsadd.png[../assets/hchostsadd]
 
 Select the hosts we want to install `+tmux+` on, then click
 `+Add Selected+`. In this example we will install `+tmux+` on `+rhel1+`
 and `+rhel2+`.
 
+.Add selected hosts
 image::hcaddrhel9hosts.png[../assets/hcaddrhel9hosts]
 
 Click on the `+Details+` tab.
 
+.Details tab
 image::clickontmuxinstallation.png[../assets/clickontmuxinstallation]
 
 == Install software with the host collection
 
 Click on `+Package Installation, Removal, and Update+`.
 
+.Package installation, Removal, and Update button
 image::packageinstallation.png[../assets/packageinstallation]
 
 Do the following:
@@ -66,21 +74,21 @@ Do the following:
 . Click `+install+`.
 . Click `+yes+`.
 
+.Update packages wizard
 image::updatepackages.png[../assets/updatepackages]
 
 You’ll be taken to the job status page.
 
+.Job status
 image::statusinstall.png[../assets/statusinstall]
 
 You can check on the real-time installation progress by clicking on a
 host.
 
+.Job details
 image::installtmuxstatusonhost.png[../assets/installtmuxstatusonhost]
 
-When the installation has completed, click on one of these buttons for
-link:tab-2[button label="`rhel1`" background="`#ee0000`"
-color="`#c7c7c7`"] *or* link:tab-3[button label="`rhel2`"
-background="`#ee0000`" color="`#c7c7c7`"] and run the command `+tmux+`.
+When the installation has completed, click on either the `rhel1.lab terminal` or `rhel2.lab terminal` tab and run the following command to test tmux.
 
 [source,bash,run]
 ----
@@ -92,4 +100,5 @@ several programs in one terminal, detach them (they keep running in the
 background) and reattach them to a different terminal.
 https://github.com/tmux/tmux/wiki[tmux documentation is available here].
 
-image::2022-08-10_09-02-46.gif[../assets/2022-08-10_09-02-46]
+.Running tmux
+image::tmux.gif[../assets/2022-08-10_09-02-46]

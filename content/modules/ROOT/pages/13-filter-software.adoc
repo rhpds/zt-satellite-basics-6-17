@@ -7,13 +7,13 @@ installation of emacs with a filter (since it’s bloatware).
 
 Go to the Content Views menu.
 
-.cv
+.Content View menu
 image::contentview.png[cv]
 
-Click on the `+RHEL9+` content view.
+Click on the `+RHEL10+` content view.
 
-.rhel9
-image::rhel9cv.png[rhel9]
+.RHEL 10 Content View
+image::rhel10cv.png[RHEL 10 Content View]
 
 Do the following.
 
@@ -21,8 +21,8 @@ Do the following.
 . Click on the `+Filters+` tab.
 . Click `+Create filter+`.
 
-.filter
-image::filter.png[filter]
+.Filter tab
+image::filter.png[Filter tab]
 
 Create a filter with the following steps.
 
@@ -33,12 +33,12 @@ Create a filter with the following steps.
 included in the `+RHEL9+` content view.
 . Click `+Create filter+`.
 
-.create filter
+.Create filter
 image::createfilter.png[create filter]
 
 Next, click `+Add RPM rule+`.
 
-.emacs
+.emacs filter
 image::emacsrpmrule.png[emacs]
 
 Configure your RPM rule in the following way.
@@ -48,13 +48,13 @@ Configure your RPM rule in the following way.
 . Select `+All versions+`.
 . Click `+Add rule+`.
 
-.add rpm rule
+.Add rpm rule
 image::addrpmruleemacs.png[add rpm rule]
 
 Click `+Publish new version+` to publish a new version of the `+RHEL9+`
 content view containing our new `+emacs+` filter.
 
-.filter pub
+.Publish a new version of the content view containing the new filter
 image::publishcvfilter.png[filter pub]
 
 The new content view will make `+emacs+` unavailable for hosts to
@@ -67,29 +67,24 @@ install.
 . Select the `+Test+` lifecycle environment.
 . Click `+Next+`.
 
-.publish
+.Publish the content view filter
 image::publishfiltercv.png[publish]
 
 Ensure the details of this new version are correct and then click
 `+Finish+`. Make sure to wait for the content view to finish publishing
 or else the filter won’t work properly.
 
-____
-[!WARNING] It can take up to 5 minutes for this particular task to
+WARNING: It can take up to 5 minutes for this particular task to
 complete publishing the content view.
-____
 
-Next, click on one of these buttons for link:tab-2[button
-label="`rhel1`" background="`#ee0000`" color="`#c7c7c7`"] *or*
-link:tab-3[button label="`rhel2`" background="`#ee0000`"
-color="`#c7c7c7`"] and run the following command.
+Next, click on either `rhel1.lab terminal` or `rhel2.lab terminal` and run the following command.
 
 [source,bash,run]
 ----
 dnf install -y emacs
 ----
 
-.emacs blocked
+.Emacs is blocked. lol
 image::emacsinstallerror.png[emacs blocked]
 
 Now all your users will be forced to use vim.
