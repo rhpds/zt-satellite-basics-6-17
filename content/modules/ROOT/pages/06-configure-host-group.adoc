@@ -84,7 +84,7 @@ image::variables.png[variables]
 We will assign the `+RHEL10+` activation key to this group.
 
 [arabic]
-. Under `+Activation Keys+` enter `+RHEL9+`.
+. Under `+Activation Keys+` enter `+RHEL10+`.
 . Click on `+Submit+`.
 
 .4
