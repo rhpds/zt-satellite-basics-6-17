@@ -1,4 +1,4 @@
-== Update Erratum
+== Update Errata
 
 Red Hat Product Errata are advisories on bug fixes, security, and
 enhancement on software installed on your RHEL host, based on analysis
