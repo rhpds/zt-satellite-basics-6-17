@@ -15,7 +15,10 @@ server.
 `+RHEL9+` content view.
 . Install `+katello-host-tools-tracer+` on our hosts.
 
-== Add the Satellite client repository - DOCUMENTATION PURPOSES ONLY
+=====
+.Add the Satellite client repository - DOCUMENTATION PURPOSES ONLY
+[%collapsible]
+====
 
 IMPORTANT: This section is for your documentation purposes. This step
 has already been performed for you. Read over this section and proceed
@@ -41,9 +44,13 @@ satellite-client-6-for-rhel-10
 
 .Red Hat Satellite client repository
 image::client6.png[]
+====
+=====
 
-== Synchronize the Satellite client repository - DOCUMENTATION PURPOSES ONLY
-
+=====
+.Synchronize the Satellite client repository - DOCUMENTATION PURPOSES ONLY
+[%collapsible]
+====
 IMPORTANT: This section is for your documentation purposes. This step
 has already been performed for you. Read over this section and proceed
 to the next step ##below##.
@@ -67,12 +74,20 @@ Do the following to synchronize the repository with Satellite.
 .Sync Satellite Client repo now
 image::syncclientproduct.png[sync]
 
+====
+=====
+
 == Add the Satellite client repository to the RHEL10 content view
 
 Now that the repository containing the Tracer application is
 synchronized to Satellite, we’ll make it available to our hosts by
 adding and enabling the repository in our existing `+RHEL10+` content
 view.
+
+=====
+.Add the Satellite client repository to the RHEL10 content view
+[%collapsible]
+====
 
 Navigate to `+Content Views+`.
 
@@ -123,6 +138,9 @@ image::publishclientrepocv.png[pubcv]
 
 Click `+Finish+`.
 
+====
+=====
+
 == Enable access to the Satellite client repository
 
 Now we’ll enable access to the
@@ -131,8 +149,12 @@ it in the `+Activation Key+`. When new hosts are added, they will
 automatically receive access to the enabled repository so that Tracer
 can be installed.
 
-With existing hosts, there is one extra step which we’ll cover in this
-challenge.
+With existing hosts, there is one extra step to enable access to the tracer app which we’ll cover in the step after this.
+
+=====
+.Enable access to the Satellite client repository
+[%collapsible]
+====
 
 First, navigate to `+Activation Keys+`.
 
@@ -160,11 +182,19 @@ repository.
 .Override to enable the Satellite 6 client repo
 image::overrideenable.png[override]
 
+====
+=====
+
 == Install Tracer on existing hosts managed by Satellite
 
 Here’s the extra step we’ll need to perform to enable access to the
 Tracer app for our existing hosts. New hosts added after this step will
 automatically get access.
+
+=====
+.Install Tracer on existing hosts managed by Satellite
+[%collapsible]
+====
 
 Go back to the `+All hosts+` menu.
 
@@ -190,7 +220,7 @@ In the `+Target hosts and inputs+` menu, do the following.
 . Paste this command. It will enable the Satellite 6 client repo and
 install the Tracer software.
 
-[source,bash]
+[source,js]
 ----
 dnf config-manager --set-enabled satellite-client-6-for-rhel-10-x86_64-rpms && dnf install -y katello-host-tools-tracer
 ----

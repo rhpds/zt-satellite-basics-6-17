@@ -8,7 +8,10 @@ applying these fixes to hosts. We’ll walk through those steps.
 For more information on Red Hat Errata,
 https://access.redhat.com/articles/2130961[please visit this page].
 
-== Apply errata
+=====
+.Apply errata
+[%collapsible]
+====
 
 To view Errata in Satellite, click on `+Content+`, `+Content Types+`,
 and `+Errata+`.
@@ -90,11 +93,19 @@ or systemd has been updated, the hosts will require a reboot.
 .Traces status
 image::tracesorange.png[../assets/tracesorange]
 
+====
+=====
+
 == Resolve Traces (Restart services that require it)
 
 When software is updated on a host, software that runs as a service
 require a restart before the updated software is loaded into memory.
 Tracer will detect which of these services need to be restarted.
+
+=====
+.Resolve Traces
+[%collapsible]
+====
 
 Click on a host (it doesn’t matter which, you’ll have to perform this
 procedure twice.)
@@ -122,3 +133,5 @@ When you view the `+Traces+` menu, the list will be empty signifying no
 services require restart.
 
 Repeat the procedure to resolve Traces with the remaining host.
+====
+=====

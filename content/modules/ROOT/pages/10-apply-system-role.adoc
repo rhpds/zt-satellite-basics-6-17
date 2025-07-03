@@ -10,6 +10,10 @@ to it. Specifically, port 80/tcp was to be opened. You can find out more
 about https://access.redhat.com/articles/3050101[RHEL System Roles
 here].
 
+=====
+.Apply RHEL System Role
+[%collapsible]
+====
 Once again, navigate to `+All Hosts+`.
 
 .All hosts

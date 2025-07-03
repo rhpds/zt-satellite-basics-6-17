@@ -23,8 +23,10 @@ To find out more about lifecycle environments, please refer to
 https://access.redhat.com/documentation/fr-fr/red_hat_satellite/6.15/html/managing_content/managing_application_lifecycles_content-management[Satellite
 documentation].
 
-== Create a lifecycle environment
-
+=====
+.Create a lifecycle environment
+[%collapsible]
+====
 Navigate to the `+Lifecycle Environments+` menu.
 
 .Lifecycle environments menu

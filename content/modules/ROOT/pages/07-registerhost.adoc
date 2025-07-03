@@ -16,12 +16,14 @@ certificate) and we will set up Insights.
 
 == Create a registration script
 
-Click on the `satellite.lab terminal` tab.
+The following section is for documentation purposes. Please don't run the commands.
 
-.satellite.lab terminal tab
-image::satellite.lab.tab.png[]
+=====
+.Create a registration script
+[%collapsible]
+====
 
-Copy and paste the bash script below into the `satellite.lab terminal`.
+A registration script can be generated in the CLI with the example `hammer` command below.
 
 [source,bash,run]
 ----
@@ -36,6 +38,9 @@ paste this##):
 set -o pipefail && curl -sS --insecure 'https://satellite.lab/register?force=true&hostgroup_id=1&setup_insights=false' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJpYXQiOjE2ODI2MjkyNzcsImp0aSI6ImQ1YjFkYThmYzM4OGY5ZjY0MmEyZjc0ZGFhNjRkMmZjODVmZDhiNjU1Y2E3NmM3ODEyYWQ5ZjQzNWE0NWE5Y2UiLCJleHAiOjE2ODI2NDM2NzcsInNjb3BlIjoicmVnaXN0cmF0aW9uI2dsb2JhbCByZWdpc3RyYXRpb24jaG9zdCJ9.bgS1XqSYd4bsY46Suq7QqC5OSKm3bSsN57c3lddiOkU' | bash
 ----
 
+====
+=====
+
 == Register hosts
 
 In the interest of minimizing copy/paste errors, a script has been
@@ -44,7 +49,14 @@ Satellite server.
 
 IMPORTANT: Make sure you are in the `satellite.lab terminal`.
 
-Copy and paste the code block below into `satellite.lab terminal`.
+=====
+.Register hosts
+[%collapsible]
+====
+Click the `run` button to execute this script.
+
+.Run button
+image::run-button.png[]
 
 [source,bash,run]
 ----
@@ -65,8 +77,9 @@ image::registeredhost.png[../assets/registeredhost]
 .All hosts
 image::webuiregistered.png[../assets/webuiregistered]
 
-You can also check that your host repos are configured for the Satellite server `+satellite.lab+` by
-running the following:
+You can also check that your host repos are configured for the Satellite server `+satellite.lab+`.
+
+Switch to either `rhel1.lab terminal` or `rhel2.lab terminal`. Then run the following:
 
 [source,bash,run]
 ----

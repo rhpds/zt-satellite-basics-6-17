@@ -20,12 +20,12 @@ You’ll need the following credentials to log into the Satellite Web UI.
 
 You can copy and paste each of them below.
 
-[source,bash]
+[source,js]
 ----
 admin
 ----
 
-[source,bash]
+[source,js]
 ----
 bc31c9a6-9ff0-11ec-9587-00155d1b0702
 ----

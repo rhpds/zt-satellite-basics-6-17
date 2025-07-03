@@ -5,6 +5,10 @@ to filter content. This means that you can include or exclude content
 from being installed by your hosts. In this challenge, we’ll block the
 installation of emacs with a filter (since it’s bloatware).
 
+=====
+.Filter content
+[%collapsible]
+====
 Go to the Content Views menu.
 
 .Content View menu

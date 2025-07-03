@@ -14,7 +14,10 @@ made to an activation key, it is applicable only to hosts that are
 registered with the amended activation key in the future. The changes
 are not made to existing hosts.
 
-== Create an activation key
+=====
+.Create an activation key
+[%collapsible]
+====
 
 To create an activation key, navigate to the `+Activation Keys+` menu.
 
@@ -32,7 +35,7 @@ environment, select the (3) `+RHEL10+` content view and then click (4)
 
 For your cut/paste convenience:
 
-[source,bash]
+[source,js]
 ----
 RHEL10
 ----

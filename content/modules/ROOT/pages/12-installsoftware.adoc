@@ -17,7 +17,14 @@ Host Collections].
 
 == Create a host collection
 
-First we’ll create a Host Collection. Click on `+Host Collections+` in
+First we’ll create a Host Collection.
+
+=====
+.Create a host collection
+[%collapsible]
+====
+
+Click on `+Host Collections+` in
 the menu.
 
 .Host collections menu
@@ -60,7 +67,17 @@ Click on the `+Details+` tab.
 .Details tab
 image::clickontmuxinstallation.png[../assets/clickontmuxinstallation]
 
+====
+=====
+
 == Install software with the host collection
+
+Now we'll install software using the host collection.
+
+=====
+.Install software with the host collection
+[%collapsible]
+====
 
 Click on `+Package Installation, Removal, and Update+`.
 
@@ -102,3 +119,6 @@ https://github.com/tmux/tmux/wiki[tmux documentation is available here].
 
 .Running tmux
 image::tmux.gif[../assets/2022-08-10_09-02-46]
+
+====
+=====
