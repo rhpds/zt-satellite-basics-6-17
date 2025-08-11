@@ -50,8 +50,7 @@ You’ll be taken to the Apply Errata menu where you should do the
 following:
 
 [arabic]
-. Select the hosts to apply the Errata. In this case we’ll select all
-hosts.
+. Select the hosts to apply the Errata. In this case we’ll select `+rhel1+` and `+rhel2+` hosts.
 . Click `+Next+`.
 
 .Apply errata
