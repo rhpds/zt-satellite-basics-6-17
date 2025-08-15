@@ -76,7 +76,7 @@ virtualmachines:
     image: "rhel-10-0-06-17-25-2"
     bootloader: efi
     register_satellite: false
-    memory: "2G"
+    memory: "4G"
     cores: 1
     image_size: "40G"
     tags:
@@ -94,7 +94,7 @@ virtualmachines:
     image: "rhel-10-0-06-17-25-2"
     bootloader: efi
     register_satellite: false
-    memory: "2G"
+    memory: "4G"
     cores: 1
     image_size: "40G"
     tags:
